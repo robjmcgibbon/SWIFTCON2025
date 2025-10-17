@@ -21,5 +21,5 @@ sudo docker build --no-cache -t tutorial-env .
 This will take about 5 minutes to execute.  
 
 ```
-docker run -it -p 8888:8888     -v $(pwd):/home/jupyteruser/tutorial     tutorial-env
+sudo docker run -it -p 8888:8888     -v $(pwd):/home/jupyteruser/tutorial     tutorial-env
 ```
