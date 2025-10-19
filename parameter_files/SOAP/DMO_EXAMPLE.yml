@@ -2,9 +2,9 @@
 # The simulation name (box size and resolution) and snapshot will be appended
 # to these to get the full name of the input/output files/directories
 Parameters:
-  sim_dir: /home/victor/SWIFTCON2025/outputs/SWIFT/
-  output_dir: /home/victor/SWIFTCON2025/outputs/SOAP/
-  scratch_dir: /home/victor/SWIFTCON2025/outputs/SOAP/
+  sim_dir: ./outputs/SWIFT/
+  output_dir: ./outputs/SOAP/
+  scratch_dir: ./outputs/SOAP/
 
 # Location of the Swift snapshots:
 Snapshots:
@@ -14,7 +14,7 @@ Snapshots:
 # Which halo finder we're using, and base name for halo finder output files
 HaloFinder:
   type: HBTplus
-  filename: "/home/victor/SWIFTCON2025/outputs/HBT-HERONS/{snap_nr:03d}/SubSnap_{snap_nr:03d}"
+  filename: "./outputs/HBT-HERONS/{snap_nr:03d}/SubSnap_{snap_nr:03d}"
 
 GroupMembership:
   # Where to write the group membership files
@@ -42,9 +42,9 @@ ApertureProperties:
     exclusive_10_kpc:
       inclusive: false
       radius_in_kpc: 10.0
-    exclusive_3000kpc:
+    exclusive_300kpc:
       inclusive: false
-      radius_in_kpc: 3000.0
+      radius_in_kpc: 300.0
     inclusive_100_kpc:
       inclusive: true
       radius_in_kpc: 100.0
