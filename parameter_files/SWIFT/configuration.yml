@@ -34,7 +34,7 @@ Gravity:
 # Parameters governing the snapshots
 Snapshots:
   basename:            ./outputs/SWIFT/snap
-  delta_time:          1.1
+  delta_time:          1.05
   scale_factor_first:  0.10 # z = 9
   compression:         4
   invoke_fof:          1
