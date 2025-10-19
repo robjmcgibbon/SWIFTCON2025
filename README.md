@@ -17,9 +17,16 @@ and build the Docker image:
 ```
 sudo docker build --no-cache -t tutorial-env .
 ```
-This will take about 5 minutes to execute.  
+This will take about 5 minutes to execute.
 
+## Accessing the Docker image
+
+This tutorial has been written with the idea that the provided Jupyter notebook will be used to run the code, as it contains all required information and commands that need to be used. To start the Docker image and the Jupyter lab, run:
 ```
 sudo docker run -it -p 8888:8888 -v $(pwd):/home/jupyteruser/tutorial tutorial-env
 ```
 
+If you would like to use the command line, run the following instead:
+```
+sudo docker run -it -v $(pwd):/home/jupyteruser/tutorial tutorial-env /bin/bash
+```
