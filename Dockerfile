@@ -63,7 +63,8 @@ RUN pip install --no-cache-dir \
     scipy \
     matplotlib \
     psutil \
-    virgodc
+    virgodc \
+    swiftsimio
 
 # Register the bash kernel with Jupyter
 RUN python3 -m bash_kernel.install
