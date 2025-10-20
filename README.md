@@ -19,6 +19,14 @@ sudo docker build --no-cache -t tutorial-env .
 ```
 This will take about 5 minutes to execute.
 
+### Mac exceptionalism
+
+On OXS, you will need to add the platform to the command above to build the environment successfully:
+
+```
+sudo docker build --platform linux/amd64 --no-cache -t tutorial-env .
+```
+
 ## Accessing the Docker image
 
 This tutorial has been written with the idea that the provided Jupyter notebook will be used to run the code, as it contains all required information and commands that need to be used. To start the Docker image and the Jupyter lab, run:
