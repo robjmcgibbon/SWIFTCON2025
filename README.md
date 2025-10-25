@@ -15,9 +15,9 @@ git clone https://github.com/robjmcgibbon/SWIFTCON2025.git
 and build the Docker image:
 
 ```
-sudo docker build --no-cache -t tutorial-env .
+sudo docker build --platform linux/amd64 --no-cache -t tutorial-env .
 ```
-This will take about 5 minutes to execute.
+This will take about 10 minutes to execute.
 
 ## Accessing the Docker image
 
@@ -30,3 +30,7 @@ If you would like to use the command line, run the following instead:
 ```
 sudo docker run -it -v $(pwd):/home/jupyteruser/tutorial tutorial-env /bin/bash
 ```
+
+## Extra info
+
+Compiling swift on a mac may require `--disable-ipo`
